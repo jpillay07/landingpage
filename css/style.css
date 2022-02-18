@@ -1,0 +1,257 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+}
+
+.site-menu{
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: black;
+}
+    
+.logo{
+    width: 200px;
+}
+
+menu{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    color: white;
+    
+
+}
+
+menu li a:link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+menu li:hover{
+    background: -webkit-linear-gradient(#cf749a , #25067c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.hero-heading{
+    background: -webkit-linear-gradient(#cf749a , #25067c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: extra bold;
+    
+
+}
+
+.hero-text{
+    color: white;
+    font-size: 18px;
+}
+
+.hero-text-content{
+    flex: 1 1 0;
+    
+}
+
+.hero-image{
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+}
+
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 50px); }
+	100% { transform: translate(0, -0px); }
+}
+
+
+.hero-single-image{
+    width: 500px;
+}
+
+.hero-button{
+    background: -webkit-linear-gradient(#cf749a , #25067c);
+    border-color: transparent;
+    color: white;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero-button:hover{
+    background: white;
+    border-color: transparent;
+    color: black;
+}
+
+.content-squares-section{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.content-squares-heading{
+    font-size: 36px;
+    color: black;
+    font-weight: bold;
+}
+
+.square-img{
+    width: 300px;
+}
+
+.content-squares{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.random-text{
+    color: black;
+    text-align: center;
+    max-width: 300px;;
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-section{
+    background-color: rgb(114, 112, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.quote{
+    width: 1000px;
+}
+
+.quote-text{
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-author{
+    text-align: end;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.call-to-action-section{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.action-box{
+    display: flex;
+    background-color: black;
+    border-radius: 15px;
+    justify-content: space-between;
+
+}
+
+.action-text{
+    margin: auto;
+}
+
+.action-button{
+    background: -webkit-linear-gradient(#cf749a , #25067c);
+    border-color: transparent;
+    color: white;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+}
+
+.action-button:hover{
+    background: white;
+    border-color: transparent;
+    color: black;
+}
+
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }
+
+  .copyright-text{
+      text-align: center;
+  }
