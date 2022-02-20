@@ -55,7 +55,7 @@ menu li:hover{
     background-color: black;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    
     
 }
 
@@ -147,7 +147,6 @@ menu li:hover{
     display: flex;
     gap: 50px;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
 }
 
